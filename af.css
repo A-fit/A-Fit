@@ -1,0 +1,227 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: none;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: none;
+    border: none;
+}
+
+.menu .logo {
+    width: 50px;
+    height: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #FFD700;
+}
+
+.home {
+    background: url('assets/af.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.5rem;
+}
+
+.gallery {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1.2rem;
+    }
+}/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* قائمة شفافة */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff6347; /* لون عند التمرير */
+}
+
+/* قسم المحتوى */
+.content {
+    margin-top: 60px; /* لتجنب تغطية المحتوى من القائمة */
+    padding: 20px;
+    text-align: center;
+}
+
+/* صورة الهيدر */
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* اجعلها أقصر */
+    background: url('assets/af.jpeg') no-repeat center center/cover;
+}
+
+.header-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none /* شفافية فوق الصورة */
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    z-index: 10;
+}
+/* يتم تطبيق هذه القاعدة على كافة العناصر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .home .cta-btn {
+    padding: 15px 30px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home .cta-btn:hover {
+    background-color: #e91e63;
+  }
+  
+  .register-btn {
+    background-color: #000000; /* لون الخلفية أزرق */
+    color: #fff; /* لون النص أبيض */
+    padding: 10px 20px; /* مساحة داخلية للزر */
+    font-size: 16px; /* حجم النص */
+    font-weight: bold; /* النص عريض */
+    border: none; /* إزالة الحدود */
+    border-radius: 8px; /* زوايا دائرية */
+    cursor: pointer; /* مؤشر الفأرة عند التمرير */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* تأثير الانتقال */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+.register-btn:hover {
+    background-color: #0056b3; /* لون أغمق عند التمرير */
+    transform: translateY(-2px); /* تحريك الزر قليلاً للأعلى */
+}
+
+.register-btn:active {
+    background-color: #003f7f; /* لون أغمق عند النقر */
+    transform: translateY(0); /* العودة للوضع الأصلي */
+}
+.strike {
+    text-decoration: line-through; /* إضافة شطب */
+    color: #000000; /* لون رمادي للنص المشطوب */
+    font-size: 20px; /* حجم النص المشطوب */
+    margin-left: 8px; /* مسافة صغيرة بين النصوص */
+}
