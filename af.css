@@ -48,14 +48,19 @@ header {
     color: white;
 }
 
-.home h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+ .home h1 {
+    font-size: 80px;
+    margin-bottom: 16px;
+    font-family: 'Tahoma', sans-serif;
+    text-align: left; /* يمكن تغييرها إلى right أو left */
 }
 
 .home p {
-    font-size: 1.5rem;
+    font-size: 30px;
+    font-family: 'Verdana', sans-serif;
+    text-align: left; /* يمكن تغييرها إلى center أو right */
 }
+
 
 .gallery {
     padding: 2rem;
@@ -173,14 +178,18 @@ body {
   
   
   .home h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .home p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
+    font-size: 80px;
+    margin-bottom: 16px;
+    font-family: 'Tahoma', sans-serif;
+    text-align: left; /* يمكن تغييرها إلى right أو left */
+}
+
+.home p {
+    font-size: 30px;
+    font-family: 'Verdana', sans-serif;
+    text-align: left; /* يمكن تغييرها إلى center أو right */
+}
+
   
   .home .cta-btn {
     padding: 15px 30px;
