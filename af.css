@@ -231,7 +231,7 @@ body {
 }
 .strike {
     text-decoration: line-through; /* إضافة شطب */
-    color: #000000; /* لون رمادي للنص المشطوب */
+    color: #adadad; /* لون رمادي للنص المشطوب */
     font-size: 20px; /* حجم النص المشطوب */
     margin-left: 8px; /* مسافة صغيرة بين النصوص */
 }
